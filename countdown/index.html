@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운트다운</title>
+    <script src="jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="count">0</div>
+    <script>
+        $({val : 0}).animate({val : 90546.5}, {
+            duration: 3000,
+            step: function(){
+                var num = numberWithCommas(this.val.toFixed(1));
+                $(".count").text(num);
+            },
+            complete: function() {
+                var num = numberWithCommas(this.val.toFixed(1));
+                $(".count").text(num);
+            }
+        });
+        function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+    </script>
+</body>
+</html>
