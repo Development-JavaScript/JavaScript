@@ -1,0 +1,42 @@
+
+@font-face { font-family: 'NanumSquareNeo-Variable'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');}
+* {box-sizing: border-box; font-family: 'NanumSquareNeo-Variable'; font-weight: 700; font-style: normal; margin: 0; padding: 0; text-decoration:none;margin: 0; padding: 0; text-decoration:none; letter-spacing: -0.05rem;}
+
+body { background-color: #222; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; font-family: 'Lato', sans-serif; margin: 0;}
+.inner{display: flex; justify-content: center; gap: 50px;}
+.banner{width: 350px; background: url('images/00.jpg'); background-size: cover; background-position: center;}
+.banner_img1 {background: url('images/01.jpg'); background-size: cover; background-position: center;}
+.banner_img2 {background: url('images/02.jpg'); background-size: cover; background-position: center;}
+.banner_img3 {background: url('images/03.jpg'); background-size: cover; background-position: center;}
+
+.con{width: 480px;}
+.movie-container {margin: 20px 0;}
+.movie-container h1 {background: #1E1C28; padding: 10px;}
+.movie-container select {background: #fff;border: 0; border-radius: 5px; font-size: 14px; margin-left: 10px; padding: 5px 15px;}
+
+.seat { background: #444451; height: 18px; line-height: 18px; width: 21px; margin: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; font-size: 10px; text-align: center; font-weight: 500;color: #9b9b9b;}
+.seat.selected {background: #ff194b;color: #fff;}
+.seat.occupied {background: #fff;}
+.seat:nth-of-type(2) {margin-right: 18px;}
+.seat:nth-last-of-type(2) {margin-left: 18px;}
+.seat:not(.occupied):hover {cursor: pointer;transform: scale(1.2);}
+
+.showcase .seat:not(.occupied):hover {cursor: default;transform: scale(1);}
+.showcase {background: rgba(0,0,0, 0.1); padding: 5px 10px; border-radius: 5px;color: #777; list-style-type: none; display: flex; justify-content: center;}
+.showcase li {display: flex; align-items: center; justify-content: center; margin: 0 10px;}
+.showcase li small {margin-left: 2px; font-style: 16px;}
+
+.container {perspective: 400px;}
+.container .row { display: flex; justify-content: center;}
+.container .screen {background: #fff;height: 70px; width: 100%; max-width: 300px; margin: 15px auto;transform: rotateX(-45deg);box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);}
+
+.bot_text{display: flex; justify-content: center; gap: 15px; margin-top: 20px;}
+.bot_text .text {margin: 5px 0;}
+.bot_text .text span {color: #ff194b;}
+
+.clear {display: block; background: #fff;border: 2px solid #777; border-radius: 5px; width: 100px; font-size: 14px; font-weight: 700; padding: 5px 0; margin: 20px auto 0;}
+.clear:hover {cursor: pointer;}
+
+@media screen and (max-width: 980px) {
+    .banner {display: none;}
+  }
