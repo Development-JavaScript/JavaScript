@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[JS]내부 스크립트</title>
+    </head>
+    <body>
+        <p>새로 고침 해보세요</p>
+        <script>
+            function random(number){
+                return Math.floor(Math.random() * number);
+            }
+        
+            function bgChange(){
+                const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = rndCol;
+            }
+            bgChange();
+        </script>
+    </body>
+</html>
