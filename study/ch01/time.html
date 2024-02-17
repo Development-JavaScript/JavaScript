@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수(function)</title>
+        <script>
+            //3. clearTimeout(변수명) : 해당 변수에 담긴 setTimeout()을 중지시키는 함수
+            //4. clearInterval(변수명) : 해당 변수에 담긴 setInterval()을 중지시키는 함수
+
+            //1초마다 [n초가 지났습니다]라고 문서에 출력
+            //단, 10초까지만 실행하시오.
+            var num = 1;
+
+            var auto = setInterval(function(){
+                document.write('<h1>' + num + '초가 지났습니다</h1>');
+
+                num++; //1씩 증가
+            },1000);
+
+            //10초뒤에 한번만 일어날일
+            setTimeout(function(){
+                clearInterval(auto); //auto라는 setInterval()을 중지
+            },10001);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
