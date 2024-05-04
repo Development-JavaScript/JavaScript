@@ -7,4 +7,5 @@
 *JIRA + GitHub 연결완료
 
 ## Notion 
+- https://intriguing-longship-9f1.notion.site/JavaScript-dcd853ba99b94681bca6a473cf5ba0e8?pvs=4
 - https://intriguing-longship-9f1.notion.site/JavaScript_-e52fddb6d241456bbc0fd9ea614e76a4?pvs=4
